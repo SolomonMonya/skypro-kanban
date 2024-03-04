@@ -1,5 +1,5 @@
-function HeaderContainer() {
-    return (
+function Header() {
+	return (
 		<header className="header">
 			<div className="container">
 				<div className="header__block">
@@ -26,6 +26,6 @@ function HeaderContainer() {
 				</div>
 			</div>
 		</header>
-    )
+	)
 }
-export default HeaderContainer
+export default Header

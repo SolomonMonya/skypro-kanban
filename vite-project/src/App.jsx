@@ -4,22 +4,22 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import PopExit from './components/PopExit.jsx'
-import PopNewCard from './components/PopNewCard.jsx'
-import PopBrowse from './components/PopBrowse.jsx'
-import HeaderContainer from './components/HeaderContainer.jsx'
-import MainContainer from './components/MainContainer.jsx'
+import PopExit from './components/popupsFolder/PopExit.jsx'
+import PopNewCard from './components/popupsFolder/PopNewCard.jsx'
+import PopBrowse from './components/popupsFolder/PopBrowse.jsx'
+import Header from './components/HeaderFolder/Header.jsx'
+import Main from './components/MainFolder/Main.jsx'
 
 function App() {
-	
+
 	return (
 		<>
-			<div className="wrapper">				
+			<div className="wrapper">
 				<PopExit />
 				<PopNewCard />
 				<PopBrowse />
-				<HeaderContainer />
-				<MainContainer />				
+				<Header />
+				<Main />
 			</div>
 			<script src="js/script.js"></script>
 		</>
