@@ -1,4 +1,4 @@
-import CardBox from "../CardFolder/Card.jsx";
+import CardBox from "../Card/Card.jsx";
 export function ColumnBox({ColumnName, ArrCards}) {
 
     const postsHtml = ArrCards.map((card) => {

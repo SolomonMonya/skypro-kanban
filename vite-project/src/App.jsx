@@ -4,11 +4,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import PopExit from './components/popupsFolder/PopExit.jsx'
-import PopNewCard from './components/popupsFolder/PopNewCard.jsx'
-import PopBrowse from './components/popupsFolder/PopBrowse.jsx'
-import Header from './components/HeaderFolder/Header.jsx'
-import Main from './components/MainFolder/Main.jsx'
+import PopExit from './components/popups/PopExit.jsx'
+import PopNewCard from './components/popups/PopNewCard.jsx'
+import PopBrowse from './components/popups/PopBrowse.jsx'
+import Header from './components/Header/Header.jsx'
+import Main from './components/Main/Main.jsx'
 
 function App() {
 

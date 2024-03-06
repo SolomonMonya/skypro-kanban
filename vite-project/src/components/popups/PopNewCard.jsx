@@ -1,4 +1,4 @@
-import CalendarBox from '../CalendarFolder/Calendar.jsx';
+import CalendarBox from '../Calendar/Calendar.jsx';
 
 function PopNewCard() {
     return (

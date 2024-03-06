@@ -1,4 +1,4 @@
-import { ColumnBox } from "../ColumnFolder/Column";
+import { ColumnBox } from "../Column/Column";
 function Main() {
 
 	return (
