@@ -2,9 +2,7 @@ import CardBox from "../Card/Card.jsx";
 export function ColumnBox({ColumnName, ArrCards}) {
 
     const postsHtml = ArrCards.map((card) => {
-        
-        let uuid = self.crypto.randomUUID();
-        return <CardBox cardColor={card[0]} cardName={card[1]} key={uuid}/>
+        return <CardBox cardColor={card.color} cardName={card.cardName} key={card.key}/>
     })
 
     return (
