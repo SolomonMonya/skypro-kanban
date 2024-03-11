@@ -88,7 +88,6 @@ position: relative;
   opacity: 1;
 }
 
-.pop-user-set:target,
 .pop-exit:target,
 .pop-new-card:target,
 .pop-browse:target {

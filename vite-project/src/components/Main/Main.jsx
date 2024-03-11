@@ -109,7 +109,6 @@ function Main() {
 	];
 
 	const arrColumnBox = arrCards.map((cards, index) => {
-		console.log(cards)
 		let uuid = self.crypto.randomUUID();
 		return <ColumnBox ColumnName={arrColumns[index].columnName} ArrCards={cards} key={uuid} />
 	});
