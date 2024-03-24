@@ -1,7 +1,5 @@
+import { useEffect, useState } from 'react'
 
-import useState from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 import PopExit from './components/popups/PopExit.jsx'
@@ -10,16 +8,110 @@ import PopBrowse from './components/popups/PopBrowse.jsx'
 import Header from './components/Header/Header.jsx'
 import Main from './components/Main/Main.jsx'
 
+
+
 function App() {
+
+	useEffect(()=> {
+		setTimeout(()=>{
+		 setIsLoaded(false);
+		}, 2000)
+	}, [])
+
+	const getUuid = () => {
+		return self.crypto.randomUUID();
+	}
+
+	const [cards, setCards] = useState([
+		[
+			{
+				key: getUuid(),
+				color: "_orange",
+				cardName: "Web Design",
+			},
+			{
+				key: getUuid(),
+				color: "_green",
+				cardName: "Research",
+
+			},
+			{
+				key: getUuid(),
+				color: "_orange",
+				cardName: "Web Design",
+
+			},
+			{
+				key: getUuid(),
+				color: "_purple",
+				cardName: "Copywriting",
+
+			},
+			{
+				key: getUuid(),
+				color: "_orange",
+				cardName: "Web Design",
+
+			},
+		],
+		[
+			{
+				key: getUuid(),
+				color: "_green",
+				cardName: "Research",
+
+			},
+		],
+		[
+			{
+				key: getUuid(),
+				color: "_green",
+				cardName: "Research",
+
+			},
+			{
+				key: getUuid(),
+				color: "_purple",
+				cardName: "Copywriting",
+
+			},
+			{
+				key: getUuid(),
+				color: "_orange",
+				cardName: "Web Design",
+
+			},
+		],
+		[
+			{
+				key: getUuid(),
+				color: "_green",
+				cardName: "Research",
+
+			},
+		],
+		[
+			{
+				key: getUuid(),
+				color: "_green",
+				cardName: "Research",
+
+			},
+		]
+	]);
+
+	const [isLoaded, setIsLoaded] = useState(true);
+
+
 
 	return (
 		<>
 			<div className="wrapper">
 				<PopExit />
-				<PopNewCard />
+				<PopNewCard cards={cards} setCards={setCards} />
 				<PopBrowse />
 				<Header />
-				<Main />
+				<Main cards={cards} isLoaded={isLoaded} />
 			</div>
 			<script src="js/script.js"></script>
 		</>
@@ -27,5 +119,6 @@ function App() {
 }
 
 export default App
+
 
 

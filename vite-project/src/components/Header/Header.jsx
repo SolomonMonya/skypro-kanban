@@ -1,12 +1,9 @@
 import { useState } from "react";
 
 function Header() {
-
 	const [isOpen, setIsOpen] = useState(false);
 
-	// consolelogs()
 	return (
-		
 		<header className="header">
 			<div className="container">
 				<div className="header__block">
@@ -18,9 +15,8 @@ function Header() {
 					</div>
 					<nav className="header__nav">
 						<button className="header__btn-main-new _hover01" id="btnMainNew"><a href="#popNewCard">Создать новую задачу</a></button>
-						<a onClick={() => setIsOpen(!isOpen)} className="header__user _hover02" href={!isOpen ? "#" : "#user-set-target"}>Ivan Ivanov</a>						
+						<a onClick={() => setIsOpen(!isOpen)} className="header__user _hover02" href={!isOpen ? "#" : "#user-set-target"}>Ivan Ivanov</a>
 						<div className="header__pop-user-set pop-user-set" id="user-set-target">
-
 							{/* <a href="">x</a> */}
 							<p className="pop-user-set__name">Ivan Ivanov</p>
 							<p className="pop-user-set__mail">ivan.ivanov@gmail.com</p>

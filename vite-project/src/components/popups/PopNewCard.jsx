@@ -1,6 +1,15 @@
 import CalendarBox from '../Calendar/Calendar.jsx';
 
-function PopNewCard() {
+function PopNewCard({cards, setCards}) {
+	const handleCreateCard = event => {
+		cards[0].push({
+			key: self.crypto.randomUUID(),
+			color: "_orange",
+			cardName: "Web Design"
+		});
+		setCards([...cards]);
+	}
+
     return (
 		<div className="pop-new-card" id="popNewCard">
 			<div className="pop-new-card__container">
@@ -35,7 +44,7 @@ function PopNewCard() {
 								</div>
 							</div>
 						</div>
-						<button className="form-new__create _hover01" id="btnCreate">Создать задачу</button>
+						<button type="submit" className="form-new__create _hover01" onClick={handleCreateCard} id="btnCreate">Создать задачу</button>
 					</div>
 				</div>
 			</div>
