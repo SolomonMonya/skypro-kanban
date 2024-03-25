@@ -25,76 +25,98 @@ function App() {
 	const [cards, setCards] = useState([
 		[
 			{
-				key: getUuid(),
-				color: "_orange",
-				cardName: "Web Design",
+				id: self.crypto.randomUUID(),
+				theme: "Web Design",
+				title: "Название задачи",
+				date: "30.10.23",
+				status: "Без статуса",
 			},
 			{
-				key: getUuid(),
-				color: "_green",
-				cardName: "Research",
+				id: self.crypto.randomUUID(),
+				theme: "Research",
+				title: "Название задачи",
+				date: "30.10.23",
+				status: "Без статуса",
 
 			},
 			{
-				key: getUuid(),
-				color: "_orange",
-				cardName: "Web Design",
+				id: self.crypto.randomUUID(),
+				theme: "Web Design",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
 
 			},
 			{
-				key: getUuid(),
-				color: "_purple",
-				cardName: "Copywriting",
+				id: self.crypto.randomUUID(),
+				theme: "Copywriting",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
 
 			},
 			{
-				key: getUuid(),
-				color: "_orange",
-				cardName: "Web Design",
-
-			},
-		],
-		[
-			{
-				key: getUuid(),
-				color: "_green",
-				cardName: "Research",
-
-			},
-		],
-		[
-			{
-				key: getUuid(),
-				color: "_green",
-				cardName: "Research",
-
-			},
-			{
-				key: getUuid(),
-				color: "_purple",
-				cardName: "Copywriting",
-
-			},
-			{
-				key: getUuid(),
-				color: "_orange",
-				cardName: "Web Design",
+				id: self.crypto.randomUUID(),
+				theme: "Web Design",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
 
 			},
 		],
 		[
 			{
-				key: getUuid(),
-				color: "_green",
-				cardName: "Research",
+				id: self.crypto.randomUUID(),
+				theme: "Research",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
 
 			},
 		],
 		[
 			{
-				key: getUuid(),
-				color: "_green",
-				cardName: "Research",
+				id: self.crypto.randomUUID(),
+				theme: "Research",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
+
+			},
+			{
+				id: self.crypto.randomUUID(),
+				theme: "Copywriting",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
+
+			},
+			{
+				id: self.crypto.randomUUID(),
+				theme: "Web Design",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
+
+			},
+		],
+		[
+			{
+				id: self.crypto.randomUUID(),
+				theme: "Research",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
+
+			},
+		],
+		[
+			{
+				id: self.crypto.randomUUID(),
+				theme: "Research",
+				title: "Название задачи",
+        		date: "30.10.23",
+        		status: "Без статуса",
 
 			},
 		]

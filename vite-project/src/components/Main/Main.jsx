@@ -1,4 +1,6 @@
 import { ColumnBox } from "../Column/Column";
+import { Container } from "../Common/Common.styled";
+import { HeadMain, MainBlock, MainContent } from "./Main.styled";
 
 function Main({cards,isLoaded}) {
 	const arrColumns = [
@@ -26,21 +28,21 @@ function Main({cards,isLoaded}) {
 
 
 	return (
-		<main className="main">
-			<div className="container">
-				<div className="main__block">
-					<div className="main__content">
-					{
-            			isLoaded? 'Loading' : 
-						cards.map((cards, index) => (
-							<ColumnBox ColumnName={arrColumns[index].columnName} ArrCards={cards} key={self.crypto.randomUUID()} />
-						))
-					}
-					</div>
-				</div>
-			</div>
-		</main>
-	)
+		<HeadMain>
+		  <Container>
+			<MainBlock>
+			  <MainContent>
+						{
+				isLoaded? 'Loading' : 
+							cards.map((cards, index) => (
+								<ColumnBox title={arrColumns[index].columnName} ArrCards={cards} key={self.crypto.randomUUID()} />
+							))
+						}
+			  </MainContent>
+			</MainBlock>
+		  </Container>
+		</HeadMain>
+	  );
 }
 
 export default Main

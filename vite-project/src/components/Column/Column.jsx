@@ -1,19 +1,22 @@
 import CardBox from "../Card/Card.jsx";
-export function ColumnBox({ColumnName, ArrCards}) {
+import { ColumnCards, ColumnTitle, ColumnTitleText, MainColumn } from "./Column.styled";
 
-    const postsHtml = ArrCards.map((card) => {
-        return <CardBox cardColor={card.color} cardName={card.cardName} key={card.key}/>
-    })
-
-    return (
-        <div className="main__column column">
-            <div className="column__title">
-                <p>{ColumnName}</p>
-            </div>
-            <div className="cards">
-                {postsHtml}
-
-            </div>
-        </div>
-    )
+export function ColumnBox({ title, ArrCards }) {
+  return (
+    <MainColumn>
+      <ColumnTitle>
+        <ColumnTitleText>{title}</ColumnTitleText>
+      </ColumnTitle>
+      <ColumnCards>
+        {ArrCards.map((card) => (
+          <CardBox
+            name={card.title}
+            theme={card.theme}
+            date={card.date}
+            key={card.id}
+          />
+        ))}
+      </ColumnCards>
+    </MainColumn>
+  );
 }
