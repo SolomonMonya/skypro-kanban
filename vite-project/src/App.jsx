@@ -7,6 +7,8 @@ import PopNewCard from './components/popups/PopNewCard.jsx'
 import PopBrowse from './components/popups/PopBrowse.jsx'
 import Header from './components/Header/Header.jsx'
 import Main from './components/Main/Main.jsx'
+import { Wrapper } from "./App.styled.js";
+import { GlobalStyle } from "./Global.styled";
 
 
 
@@ -128,15 +130,19 @@ function App() {
 
 	return (
 		<>
-			<div className="wrapper">
+
+		    <GlobalStyle />
+
+			<Wrapper >
 				<PopExit />
 				<PopNewCard cards={cards} setCards={setCards} />
 				<PopBrowse />
 				<Header />
 				<Main cards={cards} isLoaded={isLoaded} />
-			</div>
-			<script src="js/script.js"></script>
+			</Wrapper >
+			
 		</>
+
 	)
 }
 
