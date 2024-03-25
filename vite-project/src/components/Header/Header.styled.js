@@ -164,7 +164,7 @@ export const PopUserButton = styled.button`
 `;
 
 export const HeaderPopUser = styled.div`
-  display: block;
+  display: none;
   position: absolute;
   top: 61px;
   right: 0;
