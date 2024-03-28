@@ -1,6 +1,6 @@
-import CalendarBox from '../Calendar/Calendar.jsx';
+import CalendarBox from '../../Calendar/Calendar.jsx';
 
-function PopNewCard({cards, setCards}) {
+function PopNewCard({ cards, setCards }) {
 	const handleCreateCard = event => {
 		cards[0].push({
 			key: self.crypto.randomUUID(),
@@ -10,7 +10,7 @@ function PopNewCard({cards, setCards}) {
 		setCards([...cards]);
 	}
 
-    return (
+	return (
 		<div className="pop-new-card" id="popNewCard">
 			<div className="pop-new-card__container">
 				<div className="pop-new-card__block">
@@ -49,6 +49,6 @@ function PopNewCard({cards, setCards}) {
 				</div>
 			</div>
 		</div>
-    )
+	)
 }
 export default PopNewCard

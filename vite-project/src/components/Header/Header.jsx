@@ -37,7 +37,9 @@ function Header({ addCard }) {
           </HeaderLogoDark>
           <HeaderNav>
             <HeaderBtnMainNew id="btnMainNew" onClick={addCard}>
-              Создать новую задачу
+				      <a href="#popNewCard">
+                Создать новую задачу
+				      </a>
             </HeaderBtnMainNew>
 
             <HeaderUser onClick={() => setIsOpen(!isOpen)} href={!isOpen ? "#" : "#user-set-target"}>

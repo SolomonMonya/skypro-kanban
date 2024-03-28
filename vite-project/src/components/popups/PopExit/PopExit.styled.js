@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { breakpoints } from "../../lib/breakpoints";
+import { breakpoints } from "../../../lib/breakpoints";
 
 export const HeadPopExit = styled.div`
   display: none;
